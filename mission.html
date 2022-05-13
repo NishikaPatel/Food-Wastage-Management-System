@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Welcome</title>
+<link rel="stylesheet" href="missionstyle.css">
+</head>
+<body >
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="missionpic1.jpg" style="width:100%" >
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="missionpic2.jpg" style="width:100%" >
+</div>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  
+  slides[slideIndex-1].style.display = "block";  
+ 
+  setTimeout(showSlides, 2000); 
+}
+</script>
+
+<h1 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Our Mission  <hr> </br>
+• To provide unconditional help to the poor and needy in the society and To provide free food to poor and homeless, needy</br> 
+• To feed hungry and poor on streets, destitute homes, orphanages, old age homes and where there are hungry stomachs.</br>
+
+
+
+</h1>
+</body>
+</html>
